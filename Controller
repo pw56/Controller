@@ -1,0 +1,62 @@
+<!DOCTYPE html><html><head>
+<title>コントローラー</title><link rel="icon"href="https://onwa-illust.com/wp-content/uploads/2021/03/game_icon.png">
+<link>
+<style>
+body{user-select:none}
+button{cursor:pointer;position:absolute}
+.ABXY{color:#fff;height:12.5vh;width:12.5vh;border-radius:50%;border-style:none;font-size:8vh;font-family:}
+.ABXY:active{transform:scale(0.8);}
+#A{background-image:linear-gradient(130deg,#f99,#f00);top:10vh;left:10vh}
+#B{background-image:linear-gradient(130deg,#99f,#00f);top:20vh}
+#X{background-image:linear-gradient(130deg,#9f9,#0f0);top:0vh}
+#Y{background-image:linear-gradient(130deg,#ff9,#ff0);top:10vh;left:-10vh}
+#A:active{background-image:linear-gradient(130deg,#c99,#a00)}
+#B:active{background-image:linear-gradient(130deg,#99c,#00a)}
+#X:active{background-image:linear-gradient(130deg,#9c9,#0a0)}
+#Y:active{background-image:linear-gradient(130deg,#cc9,#aa0)}
+.joy{height:25vh}
+#joy_L{position:absolute;top:37.5vh;left:33.5vh}
+#joy_R{position:absolute;top:37.5vh;right:-8vh}
+#key{height:25vh;position:absolute;top:20vh;left:15vh}
+#select{height:7vh;width:10vh;border-radius:10%;border-style:none;background-color:#33333d;position:absolute;left:44vh;top:22.5vh}
+#HOME{height:10vh;width:10vh;border-radius:25%;border-style:none;background-color:#999;position:absolute;left:58.5vh;top:30vh}
+#start{height:10vh;width:10vh;border-style:none;background-color:transparent;position:absolute;left:71.5vh;top:20vh}
+.more:active{transform:scale(0.9)}
+</style>
+</head><body><div>
+<svg width="125vh"viewBox="0 0 1280.000000 794.000000"preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,794.000000) scale(0.100000,-0.100000)"fill="#000000"stroke="none"><path d="M2393 7920 c-240 -33 -379 -87 -482 -185 -31 -29 -71 -60 -89 -69
+-49 -25 -111 -85 -133 -128 -19 -36 -75 -348 -125 -688 -12 -80 -24 -129 -34
+-138 -8 -7 -62 -47 -120 -89 -124 -90 -320 -283 -412 -406 -138 -187 -231
+-367 -310 -602 -72 -215 -188 -928 -448 -2745 -71 -498 -153 -1042 -182 -1210
+-57 -332 -62 -399 -36 -535 46 -242 150 -442 326 -627 187 -196 410 -335 667
+-418 100 -32 357 -80 428 -80 65 0 282 39 369 66 244 77 472 251 621 476 91
+136 385 688 782 1466 110 215 205 392 210 391 6 0 30 -29 54 -66 25 -36 79
+-101 120 -145 191 -204 435 -335 711 -384 102 -18 320 -20 416 -3 214 36 415
+122 579 248 136 104 285 284 361 433 l24 48 692 -2 691 -3 48 -83 c198 -345
+515 -570 897 -638 103 -18 308 -20 407 -4 279 44 519 166 716 362 62 62 150
+174 185 236 10 17 24 32 30 32 7 0 97 -165 200 -367 413 -812 705 -1361 802
+-1508 156 -235 381 -411 627 -488 200 -62 386 -75 586 -39 323 58 602 199 830
+419 216 209 326 409 379 693 25 132 24 149 -20 395 -51 286 -95 571 -195 1280
+-173 1222 -253 1752 -361 2373 -46 269 -61 333 -105 459 -155 448 -443 816
+-823 1054 -50 31 -88 62 -91 74 -3 11 -25 151 -50 310 -74 472 -79 484 -195
+562 -36 24 -88 65 -117 91 -28 25 -73 59 -100 74 -147 85 -499 144 -709 119
+-306 -37 -458 -89 -567 -194 -24 -24 -65 -56 -91 -71 -62 -36 -115 -90 -137
+-140 -16 -37 -42 -185 -122 -681 l-22 -140 -1123 -3 c-1106 -2 -1124 -2 -1149
+-22 -25 -19 -41 -20 -422 -20 -378 0 -397 1 -429 20 -32 20 -51 20 -1152 20
+l-1120 0 -14 23 c-7 12 -28 117 -46 232 -57 375 -88 541 -108 582 -23 44 -84
+103 -134 129 -18 9 -60 42 -93 73 -109 101 -256 154 -512 185 -161 20 -211 19
+-380 -4z"/></g></svg><div style="position:absolute;top:17.5vh;right:-7.5vh">
+<button id="A"class="ABXY"tabindex="-1">A</button>
+<button id="B"class="ABXY"tabindex="-1">B</button>
+<button id="X"class="ABXY"tabindex="-1">X</button>
+<button id="Y"class="ABXY"tabindex="-1">Y</button>
+</div><div>
+<img id="joy_L"class="joy"src="https://static.wixstatic.com/media/210db8_b55db5b94c334bd597ac9fb795724c03~mv2.png/v1/fill/w_720,h_720,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A2%E2%97%AF.png">
+<img id="joy_R"class="joy"src="https://static.wixstatic.com/media/210db8_b55db5b94c334bd597ac9fb795724c03~mv2.png/v1/fill/w_720,h_720,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A2%E2%97%AF.png">
+</div>
+<img id="key"src="https://www.illust-box.jp/db_img/sozai/00007/79603/thumb_20171020091117_59e93f2548d93.png">
+<div><span style="font-size:7.5vh;color:#333;position:absolute;top:2.5vh;left:25vh">L</span><span style="font-size:7.5vh;color:#333;position:absolute;top:2.5vh;right:-17.5vh">R</span></div><div>
+<button id="select"class="more"tabindex="-1"></button><span style="position:relative;color:#fff;left:42.5vh;bottom:50vh">select</span>
+<button id="HOME"class="more"tabindex="-1"><img src="https://www.wam.go.jp/content/wamnet/pcpub/resources/f7f159db-eb99-4f26-ab8d-63304ee7eb81/13/topicon.png"style="position:relative;right:3.75vh;top:1vh;height:7.5vh"></button><span style="position:relative;color:#fff;left:45.25vh;bottom:40vh">HOME</span>
+<button id="start"class="more"tabindex="-1"><img src="https://icon-rainbow.com/i/icon_00484/icon_004840_256.png"style="position:relative;top:0.7vh;height:7.5vh"></button><span style="position:relative;color:#fff;left:47.5vh;bottom:50vh">start</span>
+</div><div></body></html>
